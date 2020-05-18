@@ -1,0 +1,35 @@
+version: '3.1'
+
+services:
+
+ owncloud:
+    image: owncloud:10-apache
+    restart: always
+    ports:
+      - 80:80
+    depends_on:
+      - owncloud-db
+    volumes:
+      - apps:/var/www/html/apps
+      - config:/var/www/html/config
+      - data:/var/www/html/data
+    links:
+      - owncloud-db:db
+
+ owncloud-db:
+    image: mariadb:10
+    restart: always
+    volumes:
+      - db:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_HOST: 172.17.0.2
+      MYSQL_DATABASE: owcloud
+      MYSQL_USER: user
+      MYSQL_PASSWORD: userjelszo
+
+volumes:
+  db:
+  apps:
+  config:
+  data:
