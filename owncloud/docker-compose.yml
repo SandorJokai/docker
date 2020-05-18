@@ -26,7 +26,7 @@ services:
       MYSQL_ROOT_HOST: 172.17.0.2
       MYSQL_DATABASE: owcloud
       MYSQL_USER: user
-      MYSQL_PASSWORD: userjelszo
+      MYSQL_PASSWORD: userpassword
 
 volumes:
   db:
