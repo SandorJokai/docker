@@ -1,4 +1,4 @@
-FROM debian:10
+FROM debian:9
 
 LABEL maintainer Sandor Jokai <shanxman1986@gmail.com>
 
