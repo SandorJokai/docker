@@ -1,4 +1,5 @@
-      ######## HOW TO USE IT --- make sure every files in the same directory
+<h1>HOW TO USE IT</h1>
+make sure every files resides in the same directory
       
 docker build -t "nameOfTheTag" .
 
