@@ -1,4 +1,5 @@
-FROM debian:9
+#FROM debian:9
+FROM jenkins/jenkins
 
 LABEL maintainer Sandor Jokai <shanxman1986@gmail.com>
 
