@@ -1,6 +1,6 @@
 FROM debian:9
 
-#LABEL maintainer Sandor Jokai <shanxman1986@gmail.com>
+LABEL maintainer Sandor Jokai <shanxman1986@gmail.com>
 
 RUN apt update && apt install -y --no-install-recommends apache2 mariadb-server php7.3 \
 php7.3-mysql php7.3-curl libapache2-mod-php7.3 ffmpeg nano wget unzip ca-certificates supervisor \
