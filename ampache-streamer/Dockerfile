@@ -20,7 +20,7 @@ rest/.htaccess && mv play/.htaccess.dist play/.htaccess && mv channel/.htaccess.
 
 COPY supervisord.conf /etc/supervisor/conf.d
 
-COPY credentials.sh credentials.sh
+COPY credentials.txt credentials.txt
 
 VOLUME ["/var/lib/docker/volumes/ampache"]
 
