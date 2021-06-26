@@ -1,3 +1,5 @@
+#!/bin/bash
+
 CREATE DATABASE ampache;
 
 CREATE USER 'ampache'@'localhost' IDENTIFIED BY 'ampache';
