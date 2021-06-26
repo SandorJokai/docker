@@ -4,4 +4,4 @@ CREATE USER 'ampache'@'localhost' IDENTIFIED BY 'ampache';
 
 GRANT ALL PRIVILEGES ON ampache.* TO 'ampache'@'localhost';
 
-#FLUSH PRIVILEGES;
+FLUSH PRIVILEGES;
