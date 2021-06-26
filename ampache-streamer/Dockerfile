@@ -22,9 +22,13 @@ COPY supervisord.conf /etc/supervisor/conf.d
 
 COPY credentials.txt credentials.txt
 
+RUN service mysql start && mysql < credentials.txt
+
 VOLUME ["/var/lib/docker/volumes/ampache"]
 
 EXPOSE 80 3306
 
 CMD ["/usr/bin/supervisord"]
+
+
 
