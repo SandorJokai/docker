@@ -20,6 +20,8 @@ rest/.htaccess && mv play/.htaccess.dist play/.htaccess && mv channel/.htaccess.
 
 COPY supervisord.conf /etc/supervisor/conf.d
 
+COPY sql.sh sql.sh
+
 VOLUME ["/var/lib/docker/volumes/ampache"]
 
 EXPOSE 80 3306
