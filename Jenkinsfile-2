@@ -24,12 +24,8 @@ pipeline {
                 docker { image 'docker-ampache:1.0' }
             }
             steps {
-                sh '''docker run -d --name ampache -p 80:80 -e MYSQL_ROOT_PASSWORD=root \
-                -e MYSQL_DATABASE=ampache -e MYSQL_USER=ampache -e MYSQL_PASSWORD=ampache \
-                --hostname=ampache docker-ampache:1.0'''
-                sh "mysql < sql.sh"
+                sh '''docker run -d --name ampache -p 80:80 --hostname=ampache docker-ampache:1.0'''
             }
         }
     }
 }
-
