@@ -19,7 +19,7 @@ This way of using can able to share any software installation without worrying a
 
 One one the most easiest and enjoyable way of working with containers is making micro-services.
 
-<h4>*Microservice architecture – a variant of the service-oriented architecture (SOA) structural style – arranges an application as a collection of loosely-coupled services. In a microservices architecture, services are fine-grained and the protocols are lightweight. [wikipedia](https://en.wikipedia.org/wiki/Microservices)*</h4>
+*Microservice architecture – a variant of the service-oriented architecture (SOA) structural style – arranges an application as a collection of loosely-coupled services. In a microservices architecture, services are fine-grained and the protocols are lightweight. [wikipedia](https://en.wikipedia.org/wiki/Microservices)*
 
 In this case we can build a music streamer provided by apache2 webserver and MariaDB RDBMS on a docker container.
       
