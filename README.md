@@ -24,6 +24,13 @@ One one the most easiest and enjoyable way of working with containers is making 
 
 Microservice architecture – a variant of the service-oriented architecture (SOA) structural style – arranges an application as a collection of loosely-coupled services. In a microservices architecture, services are fine-grained and the protocols are lightweight. wikipedia
 
+<h1>Docker-ish tools</h1>
+
+There are some other tools, based on docker. Docker-compose is one of them. I have another [project](https://github.com/SandorJokai/docker/tree/master/owncloud) in this repository, where I show how to use docker-compose. Docker-compose is a tool for defining and running multi-container Docker applications.
+
+There are another docker-based tool called docker-swarm. Docker-swarm is an orchestration tool where we can able to work with containers in a bit more sophisticated way. There are nodes and workers works together and the node manages all the background operations.
+
+I am not using docker-swarm. I use Kubernetes instead.
 
 
 ![npm package](https://img.shields.io/badge/docker-19.03.8-blue.svg)
