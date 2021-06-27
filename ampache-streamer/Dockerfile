@@ -22,7 +22,7 @@ COPY supervisord.conf /etc/supervisor/conf.d
 
 COPY credentials.txt credentials.txt
 
-RUN service mysql start && mysql < credentials.txt
+RUN service mysql start && mysql < credentials.txt && rm -f credentials.txt
 
 VOLUME ["/var/lib/docker/volumes/ampache"]
 
