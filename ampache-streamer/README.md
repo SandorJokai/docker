@@ -19,26 +19,26 @@ This way of using can able to share any software installation without worrying a
 Just to make sure that every files resides in the same directory.
 As step number 1, let's build an image from <a href="https://github.com/SandorJokai/docker/blob/master/ampache-streamer/Dockerfile" target="_blank">Dockerfile</a>:
       
-Step 1 - *docker build -t "nameOfTheTag" .* <h6>using tags makes our life easier, trust me...</h6>
+Step 1 -> *docker build -t "nameOfTheTag" .* <h6>using tags makes our life easier, trust me. "." assumes Dockerfile resides in the same directory</h6>
 
 <h4>Now we're ready to run a container from that image:</h4>
-Step 2 - *docker run -d --name "nameOfContainer" -p 80:80 -v ampache:/var/www/ampache ampache-stream*
+Step 2 -> *docker run -d --name "nameOfContainer" -p 80:80 -v ampache:/var/www/ampache ampache-stream*
 
 *note: To make any data savings from running container, volumes comes to help. Just type "-v" option with the run command. It'll be saved every datas from the
 container "/var/www/ampache" to host.*
 
-# First thing I needed is to get an access into the running container:
-docker exec -it "nameOfContainer" /bin/bash
+<h4>Let's get inside the running container:</h4>
+Step 3 -> *docker exec -it "nameOfContainer" /bin/bash* <h6>Besides that we can use "docker inspect" command to get more info from the container</h6>
 
-# let's make the database more secure:
-mysql_secure_installation ---> hit enter for first and then type y for the rest of the questions.
 
-# let's get inside to create a user:
-mysql -u root -p
-create user 'ampache'@'localhost' identified by 'ampache';
-grant all privileges on ampache.* to 'ampache'@'localhost';
-flush privileges;
-exit
-exit
+<h4>make the database more secure</h4>
+
+Step 4 -> *mysql_secure_installation* ---> hit enter and then type "y" for rest of the questions.
+
+<h2>Working with database</h2>
+
+As we built some sql parameters into an image, we do not need to do anything with it. We already have a database, a user and permissions to work with.
+
+<h4>Final steps in browser</h4>
 
 Let's see on browser's URL and follow the instructions to finish.
