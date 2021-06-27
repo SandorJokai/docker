@@ -16,7 +16,7 @@ RUN a2enmod rewrite && a2dissite 000-default.conf && a2ensite ampache.conf
 RUN mkdir -p /var/www/ampache && cd /var/www/ampache && \
 wget http://github.com/ampache/ampache/releases/download/4.1.1/ampache-4.1.1_all.zip && unzip \
 ampache*all.zip && chown -R www-data:www-data /var/www/ampache && mv rest/.htaccess.dist \
-rest/.htaccess && mv play/.htaccess.dist play/.htaccess && mv channel/.htaccess.dist channel/.htaccess
+rest/.htaccess && mv play/.htaccess.dist play/.htaccess && mv channel/.htaccess.dist channel/.htaccess && mkdir my-albums
 
 COPY supervisord.conf /etc/supervisor/conf.d
 
