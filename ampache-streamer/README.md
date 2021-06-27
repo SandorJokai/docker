@@ -30,6 +30,7 @@ Step 2 -> *docker run -d --name "nameOfContainer" -p 80:80 -v ampache:/var/www/a
 container "/var/www/ampache" to host.*</h6>
 
 <h4>Let's get inside the running container:</h4>
+
 Step 3 -> *docker exec -it "nameOfContainer" /bin/bash* <h6>Besides that we can use "docker inspect" command to get more info from the container</h6>
 
 
