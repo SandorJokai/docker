@@ -26,8 +26,8 @@ Step 1 -> *docker build -t "nameOfTheTag" .* <h6>using tags makes our life easie
 Step 2 -> *docker run -d --name "nameOfContainer" -p 80:80 -v ampache:/var/www/ampache ampache-stream*
 
 
-*note: To make any data savings from running container, volumes comes to help. Just type "-v" option with the run command. It'll be saved every datas from the
-container "/var/www/ampache" to host.*
+<h6>*note: To make any data savings from running container, volumes comes to help. Just type "-v" option with the run command. It'll be saved every datas from the
+container "/var/www/ampache" to host.*</h6>
 
 <h4>Let's get inside the running container:</h4>
 Step 3 -> *docker exec -it "nameOfContainer" /bin/bash* <h6>Besides that we can use "docker inspect" command to get more info from the container</h6>
