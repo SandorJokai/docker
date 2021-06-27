@@ -22,7 +22,7 @@ As step number 1, let's build an image from <a href="https://github.com/SandorJo
 Step 1 -> *docker build -t "nameOfTheTag" .* <h6>using tags makes our life easier, trust me. "." in the end assumes Dockerfile resides in the same directory</h6>
 
 <h4>Now we're ready to run a container from that image:</h4>
-Step 2 --> *docker run -d --name "nameOfContainer" -p 80:80 -v ampache:/var/www/ampache ampache-stream*
+Step 2 -> **docker run -d --name "nameOfContainer" -p 80:80 -v ampache:/var/www/ampache ampache-stream**
 
 
 *note: To make any data savings from running container, volumes comes to help. Just type "-v" option with the run command. It'll be saved every datas from the
