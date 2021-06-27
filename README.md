@@ -30,7 +30,7 @@ There are some other tools, based on docker. Docker-compose is one of them. I ha
 
 There are another docker-based tool called docker-swarm. Docker-swarm is an orchestration tool where we can able to work with containers in a bit more sophisticated way. There are nodes and workers works together and the node manages all the background operations.
 
-I am not using docker-swarm. I use [Kubernetes](https://github.com/SandorJokai/Kubernetes) instead.
+I don't use docker-swarm. I use [Kubernetes](https://github.com/SandorJokai/Kubernetes) instead.
 
 
 ![npm package](https://img.shields.io/badge/docker-19.03.8-blue.svg)
