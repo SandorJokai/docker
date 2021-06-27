@@ -40,7 +40,7 @@ Step 4 -> *mysql_secure_installation* ---> hit enter and then type "y" for rest 
 
 <h2>Working with database</h2>
 
-As we built some sql parameters <a href="https://github.com/SandorJokai/docker/blob/master/ampache-streamer/credentials.txt" target="_blank">sql parameters</a>: into the image, we do not need to do anything with it. We already have a database, a user and permissions to work with.
+As we built some <a href="https://github.com/SandorJokai/docker/blob/master/ampache-streamer/credentials.txt" target="_blank">sql parameters</a> into the image, we do not need to do anything with it. We already have a database, a user and permissions to work with.
 
 <h4>Final steps in browser</h4>
 
