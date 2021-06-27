@@ -4,6 +4,7 @@
 ![npm package](https://img.shields.io/badge/mariadb-10.3.29-yellow.svg)
 
 <h1>About Docker</h1>
+
 ![Image of docker](https://github.com/SandorJokai/docker/blob/master/ampache-streamer/docker.png)
 
 Docker is a set of platform as a service (PaaS) products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files, they can communicate with each other through well-defined channels.
