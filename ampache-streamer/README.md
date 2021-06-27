@@ -15,6 +15,13 @@ This way of using can able to share any software installation without worrying a
 - docker engine must be installed
 - be able to use some basic docker commands
 
+<h1>What about this project</h1>
+
+One one the most easiest and enjoyable way of working with containers is making micro-services.
+*Microservice architecture – a variant of the service-oriented architecture (SOA) structural style – arranges an application as a collection of loosely-coupled services. In a microservices architecture, services are fine-grained and the protocols are lightweight. [wikipedia](https://en.wikipedia.org/wiki/Microservices)*
+
+In this case we can build a music streamer provided by apache2 webserver and MariaDB RDBMS on a docker container.
+      
 <h1>How to use this</h1>
 Just to make sure that every files resides in the same directory.
 As step number 1, let's build an image from <a href="https://github.com/SandorJokai/docker/blob/master/ampache-streamer/Dockerfile" target="_blank">Dockerfile</a>:
