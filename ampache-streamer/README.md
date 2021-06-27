@@ -57,3 +57,10 @@ Let's open a browser with typing the IP_HOST and follow the instructions to fini
 - type the "ampache" to MySQL username and password
 - take the tick out from create a database as we already have one in docker image
 - finish the wizard and enjoy the music. :)
+
+![image of ampache](https://github.com/SandorJokai/docker/blob/master/ampache-streamer/ampache.png)
+
+![npm package](https://img.shields.io/badge/docker-19.03.8-blue.svg)
+![npm package](https://img.shields.io/badge/ampache-4.1.1-yellow.svg)
+![npm package](https://img.shields.io/badge/apache-2.4.38-purple.svg)
+![npm package](https://img.shields.io/badge/mariadb-10.3.29-yellow.svg)
