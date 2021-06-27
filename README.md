@@ -22,7 +22,7 @@ Literally anything. Back in the old days before DevOps, where the developers and
 
 One one the most easiest and enjoyable way of working with containers is making micro-services.
 
-Microservice architecture – a variant of the service-oriented architecture (SOA) structural style – arranges an application as a collection of loosely-coupled services. In a microservices architecture, services are fine-grained and the protocols are lightweight. wikipedia
+Microservice architecture – a variant of the service-oriented architecture (SOA) structural style – arranges an application as a collection of loosely-coupled services. In a microservices architecture, services are fine-grained and the protocols are lightweight.
 
 <h1>Docker-ish tools</h1>
 
