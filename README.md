@@ -15,6 +15,15 @@ This way of using can able to share any software installation without worrying a
 - docker engine must be installed
 - be able to use some basic docker commands
 
+<h1>What can we do with using Docker?</h2>
+
+Literally anything. Back in the old days before DevOps, where the developers and operations engineers couldn't always share their work properly. There always has been limitation this way or another. Docker can solve these types of problems in a really efficient way of using the kernel, the Hypervisor and stuff like that as results without worrying about any dependencies or limitations on any systems installed docker.
+
+
+One one the most easiest and enjoyable way of working with containers is making micro-services.
+
+Microservice architecture – a variant of the service-oriented architecture (SOA) structural style – arranges an application as a collection of loosely-coupled services. In a microservices architecture, services are fine-grained and the protocols are lightweight. wikipedia
+
 
 
 ![npm package](https://img.shields.io/badge/docker-19.03.8-blue.svg)
