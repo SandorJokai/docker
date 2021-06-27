@@ -44,7 +44,7 @@ As we built some <a href="https://github.com/SandorJokai/docker/blob/master/ampa
 
 <h1>Final steps in browser</h1>
 
-Let's see on browser's URL and follow the instructions to finish.
+Let's open a browser with typing the IP_HOST and follow the instructions to finish.
 
 - type the "ampache" to MySQL username and password
 - take the tick out from create a database as we already have one in docker image
