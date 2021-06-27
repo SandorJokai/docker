@@ -18,7 +18,7 @@ This way of using can able to share any software installation without worrying a
 <h1>How to use this</h1>
 Just to make sure that every files resides in the same directory.
       
-Step 1 - *docker build -t "nameOfTheTag" .*     *using tags makes our life easier, trust me...*
+Step 1 - *docker build -t "nameOfTheTag" .**using tags makes our life easier, trust me...*
 
 <h4>Now we're ready to run a container from that image:</h4>
 Step 2 - *docker run -d --name "nameOfContainer" -p 80:80 -v ampache:/var/www/ampache ampache-stream*
