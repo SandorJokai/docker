@@ -17,7 +17,7 @@ This way of using can able to share any software installation without worrying a
 
 <h1>How to use this</h1>
 Just to make sure that every files resides in the same directory.
-As step number 1, let's build an image from [from here](https://github.com/SandorJokai/docker/blob/master/ampache-streamer/Dockerfile) :
+As step number 1, let's build an image from [Dockerfile](https://github.com/SandorJokai/docker/tree/master/ampache-streamer/Dockerfile) :
       
 Step 1 - *docker build -t "nameOfTheTag" .* <h6>using tags makes our life easier, trust me...</h6>
 
