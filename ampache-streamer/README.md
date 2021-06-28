@@ -27,11 +27,13 @@ In this case we can build a music streamer provided by apache2 webserver and Mar
 Just to make sure that every files resides in the same directory.
 As step number 1, let's build an image from <a href="https://github.com/SandorJokai/docker/blob/master/ampache-streamer/Dockerfile" target="_blank">Dockerfile</a>:
       
-Step 1 -> *docker build -t "nameOfTheTag" .* <h6>using tags makes our life easier, trust me. "." in the end assumes Dockerfile resides in the same directory</h6>
+Step 1 -> ```bash
+docker build -t "nameOfTheTag" .``` <h6>using tags makes our life easier, trust me. "." in the end assumes Dockerfile resides in the same directory</h6>
 
 <h4>Now we're ready to run a container from that image:</h4>
 
-Step 2 -> *docker run -d --name "nameOfContainer" -p 80:80 -v ampache:/var/www/ampache ampache-stream*
+Step 2 -> ```bash
+docker run -d --name "nameOfContainer" -p 80:80 -v ampache:/var/www/ampache ampache-stream```
 
 
 <h6>*note: To make any data savings from running container, volumes comes to help. Just type "-v" option with the run command. It'll be saved every datas from the
@@ -39,12 +41,14 @@ container "/var/www/ampache" to host.*</h6>
 
 <h4>Let's get inside the running container:</h4>
 
-Step 3 -> *docker exec -it "nameOfContainer" /bin/bash* <h6>Besides that we can use "docker inspect" command to get more info from the container</h6>
+Step 3 -> ```bash
+docker exec -it "nameOfContainer" /bin/bash``` <h6>Besides that we can use "docker inspect" command to get more info from the container</h6>
 
 
 <h4>make the database more secure</h4>
 
-Step 4 -> *mysql_secure_installation* ---> hit enter and then type "y" for rest of the questions.
+Step 4 -> ```bash
+mysql_secure_installation``` ---> hit enter and then type "y" for rest of the questions.
 
 <h2>Working with database</h2>
 
