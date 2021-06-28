@@ -27,7 +27,8 @@ In this case we can build a music streamer provided by apache2 webserver and Mar
 Just to make sure that every files resides in the same directory.
 As step number 1, let's build an image from <a href="https://github.com/SandorJokai/docker/blob/master/ampache-streamer/Dockerfile" target="_blank">Dockerfile</a>:
       
-Step 1 -> ```bash
+Step 1 ->
+```bash
 docker build -t "nameOfTheTag" .``` <h6>using tags makes our life easier, trust me. "." in the end assumes Dockerfile resides in the same directory</h6>
 
 <h4>Now we're ready to run a container from that image:</h4>
