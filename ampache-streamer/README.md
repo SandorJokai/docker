@@ -49,6 +49,7 @@ container "/var/www/ampache" to host.*</h6>
 <h4>Let's get inside the running container:</h4>
 
 <h3>Step 3</h3>
+
 ```bash
 docker exec -it "nameOfContainer" /bin/bash
 ```
